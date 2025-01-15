@@ -17,22 +17,6 @@ caractère » que nous allons copier dans le fichier texte. Ainsi c’est cette 
 que nous allons manipuler pour toutes nos opérations. Notre fichier texte
 pourra prendre au maximum 1000 caractères donc notre chaîne de caractère
 devra aussi avoir cette taille Nous allons privilégier les déclarations avec
-pointeurs pour éviter les débordements d’espace.
-
-PROJET 5
-FONCTIONNALITÉS DE L’APPLICATION
-➢ Créer un nouveau fichier texte ou ouvrir un fichier existant.
-➢ Lire et afficher le contenu d’un fichier texte.
-➢ Ajouter du texte à un fichier existant.
-➢ Rechercher un mot spécifique dans le fichier et afficher le nombre
-d'occurrences.
-➢ Sauvegarder les modifications.
-INTRODUCTION
-De manière générale, notre code se basera sur une variable globale « chaîne de
-caractère » que nous allons copier dans le fichier texte. Ainsi c’est cette variable
-que nous allons manipuler pour toutes nos opérations. Notre fichier texte
-pourra prendre au maximum 1000 caractères donc notre chaîne de caractère
-devra aussi avoir cette taille Nous allons privilégier les déclarations avec
 pointeurs pour éviter les débordements d’espace. Les codes sur les déclarations
 avec pointeurs sont dans le cours donc nous allons nous en inspirer pour
 déclarer le plus possible des pointeurs.
