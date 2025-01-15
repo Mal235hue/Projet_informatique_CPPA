@@ -26,7 +26,7 @@ int rechercher(FILE *fichier, char mot_a_chercher[], int *occurence) {
         char *resultat = ligne;
         while ((resultat = strstr(resultat, mot_a_chercher)) != NULL) {
             (*occurence)++;
-            resultat++; // Continuer après l'occurrence trouvée
+            resultat++;
         }
     }
     return 0;

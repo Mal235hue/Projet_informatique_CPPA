@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     do {
         char input[1001];
         printf("Bienvenue dans votre editeur de texte\nEntrez votre texte : ");
-        getchar(); // Pour éviter un problème avec fgets après scanf
+        getchar();
         fgets(input, sizeof(input), stdin);
         ajouter_texte(fichier, input);
         fflush(fichier);
@@ -25,19 +25,23 @@ int main(int argc, char *argv[]) {
     afficher(fichier);
 
     int second_choice;
-    printf("\nVoulez-vous connaitre le nombre d'occurrences d'un mot dans votre texte ? (0 = Non, 1 = Oui) : ");
-    scanf("%d", &second_choice);
+    
 
-    if (second_choice == 1) {
-        int nbre = 0;
+    while (second_choice == 1)
+    {
+        printf("\nVoulez-vous connaitre le nombre d'occurrences d'un mot dans votre texte ? (0 = Non, 1 = Oui) : ");
+        scanf("%d", &second_choice);
+          int nbre = 0;
         char mot[200];
-        getchar(); // Éviter les conflits avec fgets après scanf
+        getchar();
         printf("Entrez le mot ou le groupe de mots a rechercher : ");
         fgets(mot, sizeof(mot), stdin);
         mot[strcspn(mot, "\n")] = '\0';
         rechercher(fichier, mot, &nbre);
         printf("Votre mot apparaît dans le texte %d fois.\n", nbre);
     }
+      
+    
 
     fclose(fichier);
     return 0;
