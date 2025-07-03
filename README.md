@@ -71,3 +71,4 @@ Tester avec un mot absent du texte.
 Tester la recherche avec des mots proches mais différents (e.g., "test" et
 "tester").
 
+Ce projet a donc été réalisé en groupe avec mes camarades de classe.
